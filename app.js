@@ -15,13 +15,4 @@ app.use(express.urlencoded({extended : true}));
 app.use('/cat', catRoute);
 app.use('/user',userRoute);
 
-
-
-
-app.get('/',(res,req,next)=>{
-  res.json({msg:'This is CORS-enabled for all origins'});
-
-});
-
-
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
